@@ -10,17 +10,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .solar-system {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 80vw; /* Use viewport width to make it responsive */
+  height: 80vw; /* Same as width to maintain the aspect ratio */
+  max-width: 500px; /* Set a maximum size to prevent it from growing too large */
+  max-height: 500px;
 }
 
 .sun {
-  width: 100px;
-  height: 100px;
+  width: 10vw; /* Use relative width for responsiveness */
+  height: 10vw; /* Keep it proportional */
+  max-width: 100px; /* Max size for larger screens */
+  max-height: 100px;
   background-color: yellow;
   border-radius: 50%;
   position: absolute;
@@ -38,12 +43,14 @@ body {
 }
 
 .planet-body {
-  width: 30px;
-  height: 30px;
+  width: 5vw; /* Relative size for planets */
+  height: 5vw;
+  max-width: 30px; /* Max size for larger screens */
+  max-height: 30px;
   border-radius: 50%;
   position: absolute;
-  top: -15px;
-  left: -15px;
+  top: -50%;
+  left: -50%;
 }
 
 .orbit1 {
@@ -64,36 +71,36 @@ body {
 
 @keyframes rotateOrbit1 {
   0% {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    transform: rotate(0deg) translateX(30vw) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    transform: rotate(360deg) translateX(30vw) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit2 {
   0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform: rotate(0deg) translateX(40vw) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform: rotate(360deg) translateX(40vw) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit3 {
   0% {
-    transform: rotate(0deg) translateX(250px) rotate(0deg);
+    transform: rotate(0deg) translateX(50vw) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    transform: rotate(360deg) translateX(50vw) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit4 {
   0% {
-    transform: rotate(0deg) translateX(300px) rotate(0deg);
+    transform: rotate(0deg) translateX(60vw) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    transform: rotate(360deg) translateX(60vw) rotate(-360deg);
   }
 }
