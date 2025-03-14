@@ -48,7 +48,7 @@ body {
   position: absolute;
 }
 
-/* Define planet distances from the sun using margin for better alignment */
+/* Define planet positions manually without animation */
 .orbit1 .planet-body { background-color: #ffeb3b; margin-left: 40px; }
 .orbit2 .planet-body { background-color: #2196f3; margin-left: 70px; }
 .orbit3 .planet-body { background-color: #f44336; margin-left: 100px; }
@@ -58,24 +58,4 @@ body {
 .orbit7 .planet-body { background-color: #3f51b5; margin-left: 220px; }
 .orbit8 .planet-body { background-color: #00bcd4; margin-left: 250px; }
 .orbit9 .planet-body { background-color: #8bc34a; margin-left: 280px; }
-
-/* Orbit animations */
-.orbit1 { animation: orbit 5s linear infinite; }
-.orbit2 { animation: orbit 7s linear infinite; }
-.orbit3 { animation: orbit 9s linear infinite; }
-.orbit4 { animation: orbit 11s linear infinite; }
-.orbit5 { animation: orbit 13s linear infinite; }
-.orbit6 { animation: orbit 15s linear infinite; }
-.orbit7 { animation: orbit 17s linear infinite; }
-.orbit8 { animation: orbit 19s linear infinite; }
-.orbit9 { animation: orbit 21s linear infinite; }
-
-/* Keyframes for orbiting effect */
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+</style>
