@@ -12,12 +12,21 @@ body {
   height: 100vh;
 }
 
+.solar-system {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
 .center-dot {
   width: 30px;
   height: 30px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .orbit {
@@ -27,7 +36,6 @@ body {
   width: 100%;
   height: 100%;
   transform-origin: center;
-  animation: rotate 10s linear infinite;
 }
 
 .dot {
@@ -42,15 +50,50 @@ body {
 }
 
 /* Set the different orbit sizes */
-.orbit1 { animation-duration: 5s; }
-.orbit2 { animation-duration: 6s; }
-.orbit3 { animation-duration: 7s; }
-.orbit4 { animation-duration: 8s; }
-.orbit5 { animation-duration: 9s; }
-.orbit6 { animation-duration: 10s; }
-.orbit7 { animation-duration: 11s; }
-.orbit8 { animation-duration: 12s; }
-.orbit9 { animation-duration: 13s; }
+.orbit1 { 
+  animation: rotate 5s linear infinite;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.orbit2 { 
+  animation: rotate 6s linear infinite;
+  transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.orbit3 { 
+  animation: rotate 7s linear infinite;
+  transform: translate(-50%, -50%) rotate(80deg);
+}
+
+.orbit4 { 
+  animation: rotate 8s linear infinite;
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.orbit5 { 
+  animation: rotate 9s linear infinite;
+  transform: translate(-50%, -50%) rotate(160deg);
+}
+
+.orbit6 { 
+  animation: rotate 10s linear infinite;
+  transform: translate(-50%, -50%) rotate(200deg);
+}
+
+.orbit7 { 
+  animation: rotate 11s linear infinite;
+  transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.orbit8 { 
+  animation: rotate 12s linear infinite;
+  transform: translate(-50%, -50%) rotate(280deg);
+}
+
+.orbit9 { 
+  animation: rotate 13s linear infinite;
+  transform: translate(-50%, -50%) rotate(320deg);
+}
 
 /* Keyframes for orbiting effect */
 @keyframes rotate {
