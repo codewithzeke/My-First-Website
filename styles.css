@@ -48,18 +48,18 @@ body {
   position: absolute;
 }
 
-/* Define planet positions manually */
-.orbit1 .planet-body { background-color: #ffeb3b; margin-left: 40px; }
-.orbit2 .planet-body { background-color: #2196f3; margin-left: 70px; }
-.orbit3 .planet-body { background-color: #f44336; margin-left: 100px; }
-.orbit4 .planet-body { background-color: #4caf50; margin-left: 130px; }
-.orbit5 .planet-body { background-color: #ff5722; margin-left: 160px; }
-.orbit6 .planet-body { background-color: #9c27b0; margin-left: 190px; }
-.orbit7 .planet-body { background-color: #3f51b5; margin-left: 220px; }
-.orbit8 .planet-body { background-color: #00bcd4; margin-left: 250px; }
-.orbit9 .planet-body { background-color: #8bc34a; margin-left: 280px; }
+/* Define planet distances from the sun */
+.orbit1 .planet-body { background-color: #ffeb3b; transform: translateX(40px); }
+.orbit2 .planet-body { background-color: #2196f3; transform: translateX(70px); }
+.orbit3 .planet-body { background-color: #f44336; transform: translateX(100px); }
+.orbit4 .planet-body { background-color: #4caf50; transform: translateX(130px); }
+.orbit5 .planet-body { background-color: #ff5722; transform: translateX(160px); }
+.orbit6 .planet-body { background-color: #9c27b0; transform: translateX(190px); }
+.orbit7 .planet-body { background-color: #3f51b5; transform: translateX(220px); }
+.orbit8 .planet-body { background-color: #00bcd4; transform: translateX(250px); }
+.orbit9 .planet-body { background-color: #8bc34a; transform: translateX(280px); }
 
-/* Keyframes for rotating each planet's orbit */
+/* Orbit animations for each planet */
 .orbit1 {
   animation: orbit1 5s linear infinite;
 }
@@ -88,7 +88,7 @@ body {
   animation: orbit9 21s linear infinite;
 }
 
-/* Keyframes for each orbit animation */
+/* Keyframes for rotating planets */
 @keyframes orbit1 {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
