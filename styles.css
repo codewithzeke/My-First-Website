@@ -64,36 +64,36 @@ body {
 
 @keyframes rotateOrbit1 {
   0% {
-    transform: rotate(0deg) translateX(50px) rotate(0deg);
+    transform: rotate(0deg) translateX(25px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    transform: rotate(360deg) translateX(25px) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit2 {
   0% {
-    transform: rotate(0deg) translateX(70px) rotate(0deg);
+    transform: rotate(0deg) translateX(35px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    transform: rotate(360deg) translateX(35px) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit3 {
   0% {
-    transform: rotate(0deg) translateX(80px) rotate(0deg);
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
   }
 }
 
 @keyframes rotateOrbit4 {
   0% {
-    transform: rotate(0deg) translateX(100px) rotate(0deg);
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
   }
 }
