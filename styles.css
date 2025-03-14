@@ -42,8 +42,8 @@ body {
   height: 3px;
   border-radius: 50%;
   position: absolute;
-  top: -15px;
-  left: -15px;
+  top: -50%;
+  left: -50%;
 }
 
 .orbit1 {
