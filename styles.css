@@ -41,35 +41,21 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: absolute;
-  top: -15px;
-  left: -15px;
 }
 
-/* Different orbit distances */
-.orbit1 { width: 120px; height: 120px; transform-origin: 60px 60px; }
-.orbit2 { width: 160px; height: 160px; transform-origin: 80px 80px; }
-.orbit3 { width: 200px; height: 200px; transform-origin: 100px 100px; }
-.orbit4 { width: 240px; height: 240px; transform-origin: 120px 120px; }
-.orbit5 { width: 280px; height: 280px; transform-origin: 140px 140px; }
-.orbit6 { width: 320px; height: 320px; transform-origin: 160px 160px; }
-.orbit7 { width: 360px; height: 360px; transform-origin: 180px 180px; }
-.orbit8 { width: 400px; height: 400px; transform-origin: 200px 200px; }
-.orbit9 { width: 440px; height: 440px; transform-origin: 220px 220px; }
+/* Planets positioned in orbit */
+.orbit1 { transform: translateX(50px); animation: rotate 10s linear infinite; }
+.orbit2 { transform: translateX(80px); animation: rotate 15s linear infinite; }
+.orbit3 { transform: translateX(110px); animation: rotate 20s linear infinite; }
+.orbit4 { transform: translateX(140px); animation: rotate 25s linear infinite; }
+.orbit5 { transform: translateX(170px); animation: rotate 30s linear infinite; }
+.orbit6 { transform: translateX(200px); animation: rotate 35s linear infinite; }
+.orbit7 { transform: translateX(230px); animation: rotate 40s linear infinite; }
+.orbit8 { transform: translateX(260px); animation: rotate 45s linear infinite; }
+.orbit9 { transform: translateX(290px); animation: rotate 50s linear infinite; }
 
-/* Orbit Animations */
-.orbit1 { animation: rotate 10s linear infinite; }
-.orbit2 { animation: rotate 15s linear infinite; }
-.orbit3 { animation: rotate 20s linear infinite; }
-.orbit4 { animation: rotate 25s linear infinite; }
-.orbit5 { animation: rotate 30s linear infinite; }
-.orbit6 { animation: rotate 35s linear infinite; }
-.orbit7 { animation: rotate 40s linear infinite; }
-.orbit8 { animation: rotate 45s linear infinite; }
-.orbit9 { animation: rotate 50s linear infinite; }
-
-/* Single keyframe for all orbits */
+/* Single keyframe animation for rotation */
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg) translateX(var(--distance)); }
+  100% { transform: rotate(360deg) translateX(var(--distance)); }
 }
