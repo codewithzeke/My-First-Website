@@ -29,13 +29,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* Orbit container */
 .orbit {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
   height: 100%;
-  transform-origin: center;
+  transform-origin: 50% 50%;  /* Ensures orbits rotate around the center */
 }
 
 .dot {
@@ -49,58 +50,166 @@ body {
   transform: translateX(-50%);
 }
 
-/* Set the different orbit sizes */
-.orbit1 { 
+/* Orbit 1 */
+.orbit1 {
   animation: rotate 5s linear infinite;
-  transform: translate(-50%, -50%) rotate(0deg);
+}
+.orbit1 .dot {
+  animation: move1 5s linear infinite;
 }
 
-.orbit2 { 
+/* Orbit 2 */
+.orbit2 {
   animation: rotate 6s linear infinite;
-  transform: translate(-50%, -50%) rotate(40deg);
+}
+.orbit2 .dot {
+  animation: move2 6s linear infinite;
 }
 
-.orbit3 { 
+/* Orbit 3 */
+.orbit3 {
   animation: rotate 7s linear infinite;
-  transform: translate(-50%, -50%) rotate(80deg);
+}
+.orbit3 .dot {
+  animation: move3 7s linear infinite;
 }
 
-.orbit4 { 
+/* Orbit 4 */
+.orbit4 {
   animation: rotate 8s linear infinite;
-  transform: translate(-50%, -50%) rotate(120deg);
+}
+.orbit4 .dot {
+  animation: move4 8s linear infinite;
 }
 
-.orbit5 { 
+/* Orbit 5 */
+.orbit5 {
   animation: rotate 9s linear infinite;
-  transform: translate(-50%, -50%) rotate(160deg);
+}
+.orbit5 .dot {
+  animation: move5 9s linear infinite;
 }
 
-.orbit6 { 
+/* Orbit 6 */
+.orbit6 {
   animation: rotate 10s linear infinite;
-  transform: translate(-50%, -50%) rotate(200deg);
+}
+.orbit6 .dot {
+  animation: move6 10s linear infinite;
 }
 
-.orbit7 { 
+/* Orbit 7 */
+.orbit7 {
   animation: rotate 11s linear infinite;
-  transform: translate(-50%, -50%) rotate(240deg);
+}
+.orbit7 .dot {
+  animation: move7 11s linear infinite;
 }
 
-.orbit8 { 
+/* Orbit 8 */
+.orbit8 {
   animation: rotate 12s linear infinite;
-  transform: translate(-50%, -50%) rotate(280deg);
+}
+.orbit8 .dot {
+  animation: move8 12s linear infinite;
 }
 
-.orbit9 { 
+/* Orbit 9 */
+.orbit9 {
   animation: rotate 13s linear infinite;
-  transform: translate(-50%, -50%) rotate(320deg);
+}
+.orbit9 .dot {
+  animation: move9 13s linear infinite;
 }
 
-/* Keyframes for orbiting effect */
+/* Keyframes for rotating orbits */
 @keyframes rotate {
   0% {
-    transform: rotate(0deg) translateX(100px);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(100px);
+    transform: rotate(360deg);
+  }
+}
+
+/* Keyframes for the individual dot movements on each orbit */
+@keyframes move1 {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(100px) rotate(360deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(120px) rotate(360deg);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateX(140px);
+  }
+  100% {
+    transform: translateX(140px) rotate(360deg);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translateX(160px);
+  }
+  100% {
+    transform: translateX(160px) rotate(360deg);
+  }
+}
+
+@keyframes move5 {
+  0% {
+    transform: translateX(180px);
+  }
+  100% {
+    transform: translateX(180px) rotate(360deg);
+  }
+}
+
+@keyframes move6 {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(200px) rotate(360deg);
+  }
+}
+
+@keyframes move7 {
+  0% {
+    transform: translateX(220px);
+  }
+  100% {
+    transform: translateX(220px) rotate(360deg);
+  }
+}
+
+@keyframes move8 {
+  0% {
+    transform: translateX(240px);
+  }
+  100% {
+    transform: translateX(240px) rotate(360deg);
+  }
+}
+
+@keyframes move9 {
+  0% {
+    transform: translateX(260px);
+  }
+  100% {
+    transform: translateX(260px) rotate(360deg);
   }
 }
