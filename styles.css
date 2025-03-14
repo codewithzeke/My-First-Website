@@ -30,6 +30,7 @@ body {
   box-shadow: 0 0 20px 5px yellow;
 }
 
+/* Planet container */
 .planet {
   position: absolute;
   top: 50%;
@@ -37,25 +38,33 @@ body {
   transform-origin: center;
 }
 
+/* Planet bodies */
 .planet-body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: -15px;
 }
 
-/* Planets positioned in orbit */
-.orbit1 { transform: translateX(50px); animation: rotate 10s linear infinite; }
-.orbit2 { transform: translateX(80px); animation: rotate 15s linear infinite; }
-.orbit3 { transform: translateX(110px); animation: rotate 20s linear infinite; }
-.orbit4 { transform: translateX(140px); animation: rotate 25s linear infinite; }
-.orbit5 { transform: translateX(170px); animation: rotate 30s linear infinite; }
-.orbit6 { transform: translateX(200px); animation: rotate 35s linear infinite; }
-.orbit7 { transform: translateX(230px); animation: rotate 40s linear infinite; }
-.orbit8 { transform: translateX(260px); animation: rotate 45s linear infinite; }
-.orbit9 { transform: translateX(290px); animation: rotate 50s linear infinite; }
+/* Adjust distances for each planet */
+.orbit1 { transform: translateX(40px); animation: orbit 5s linear infinite; }
+.orbit2 { transform: translateX(70px); animation: orbit 7s linear infinite; }
+.orbit3 { transform: translateX(100px); animation: orbit 9s linear infinite; }
+.orbit4 { transform: translateX(130px); animation: orbit 11s linear infinite; }
+.orbit5 { transform: translateX(160px); animation: orbit 13s linear infinite; }
+.orbit6 { transform: translateX(190px); animation: orbit 15s linear infinite; }
+.orbit7 { transform: translateX(220px); animation: orbit 17s linear infinite; }
+.orbit8 { transform: translateX(250px); animation: orbit 19s linear infinite; }
+.orbit9 { transform: translateX(280px); animation: orbit 21s linear infinite; }
 
-/* Single keyframe animation for rotation */
-@keyframes rotate {
-  0% { transform: rotate(0deg) translateX(var(--distance)); }
-  100% { transform: rotate(360deg) translateX(var(--distance)); }
+/* Orbit animation */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
 }
