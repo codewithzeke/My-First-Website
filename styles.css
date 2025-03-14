@@ -16,6 +16,7 @@ body {
   position: relative;
   width: 500px;
   height: 500px;
+  animation: rotateSystem 30s linear infinite; /* Rotate the whole solar system */
 }
 
 .sun {
@@ -48,7 +49,7 @@ body {
   position: absolute;
 }
 
-/* Define planet positions manually without animation */
+/* Define planet positions manually */
 .orbit1 .planet-body { background-color: #ffeb3b; margin-left: 40px; }
 .orbit2 .planet-body { background-color: #2196f3; margin-left: 70px; }
 .orbit3 .planet-body { background-color: #f44336; margin-left: 100px; }
@@ -58,4 +59,14 @@ body {
 .orbit7 .planet-body { background-color: #3f51b5; margin-left: 220px; }
 .orbit8 .planet-body { background-color: #00bcd4; margin-left: 250px; }
 .orbit9 .planet-body { background-color: #8bc34a; margin-left: 280px; }
+
+/* Keyframes for rotating the entire solar system */
+@keyframes rotateSystem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>
