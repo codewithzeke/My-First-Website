@@ -46,23 +46,90 @@ body {
   left: -15px;
 }
 
+/* Orbit speeds for 9 planets */
 .orbit1 {
-  animation: rotateOrbit1 10s linear infinite;
+  animation: rotateOrbit1 8s linear infinite;
 }
 
 .orbit2 {
-  animation: rotateOrbit2 15s linear infinite;
+  animation: rotateOrbit2 12s linear infinite;
 }
 
 .orbit3 {
-  animation: rotateOrbit3 20s linear infinite;
+  animation: rotateOrbit3 16s linear infinite;
 }
 
 .orbit4 {
-  animation: rotateOrbit4 25s linear infinite;
+  animation: rotateOrbit4 20s linear infinite;
 }
 
+.orbit5 {
+  animation: rotateOrbit5 24s linear infinite;
+}
+
+.orbit6 {
+  animation: rotateOrbit6 28s linear infinite;
+}
+
+.orbit7 {
+  animation: rotateOrbit7 32s linear infinite;
+}
+
+.orbit8 {
+  animation: rotateOrbit8 36s linear infinite;
+}
+
+.orbit9 {
+  animation: rotateOrbit9 40s linear infinite;
+}
+
+/* Rotation keyframes for all orbits */
 @keyframes rotateOrbit1 {
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit2 {
+  0% {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit3 {
+  0% {
+    transform: rotate(0deg) translateX(90px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(90px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit4 {
+  0% {
+    transform: rotate(0deg) translateX(110px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(110px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit5 {
+  0% {
+    transform: rotate(0deg) translateX(130px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(130px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit6 {
   0% {
     transform: rotate(0deg) translateX(150px) rotate(0deg);
   }
@@ -71,29 +138,29 @@ body {
   }
 }
 
-@keyframes rotateOrbit2 {
+@keyframes rotateOrbit7 {
   0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform: rotate(0deg) translateX(170px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform: rotate(360deg) translateX(170px) rotate(-360deg);
   }
 }
 
-@keyframes rotateOrbit3 {
+@keyframes rotateOrbit8 {
   0% {
-    transform: rotate(0deg) translateX(250px) rotate(0deg);
+    transform: rotate(0deg) translateX(190px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    transform: rotate(360deg) translateX(190px) rotate(-360deg);
   }
 }
 
-@keyframes rotateOrbit4 {
+@keyframes rotateOrbit9 {
   0% {
-    transform: rotate(0deg) translateX(300px) rotate(0deg);
+    transform: rotate(0deg) translateX(210px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    transform: rotate(360deg) translateX(210px) rotate(-360deg);
   }
 }
