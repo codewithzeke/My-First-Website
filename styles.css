@@ -61,6 +61,24 @@ body {
 .orbit4 {
   animation: rotateOrbit4 8s linear infinite;
 }
+.orbit5 {
+  animation: rotateOrbit1 11s linear infinite;
+}
+
+.orbit6 {
+  animation: rotateOrbit2 14s linear infinite;
+}
+
+.orbit7 {
+  animation: rotateOrbit3 17s linear infinite;
+}
+
+.orbit8 {
+  animation: rotateOrbit4 20s linear infinite;
+}
+.orbit9 {
+  animation: rotateOrbit4 23s linear infinite;
+}
 
 @keyframes rotateOrbit1 {
   0% {
@@ -95,5 +113,48 @@ body {
   }
   100% {
     transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+@keyframes rotateOrbit5 {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit6 {
+  0% {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit7 {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateOrbit8 {
+  0% {
+    transform: rotate(0deg) translateX(90px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(90px) rotate(-360deg);
+  }
+}
+@keyframes rotateOrbit9 {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
 }
