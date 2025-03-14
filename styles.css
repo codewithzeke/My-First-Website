@@ -47,27 +47,6 @@ body {
   position: absolute;
 }
 
-/* Define planet distances from the sun */
-.orbit1 { transform: rotate(0deg) translateX(50px); }
-.orbit2 { transform: rotate(0deg) translateX(80px); }
-.orbit3 { transform: rotate(0deg) translateX(110px); }
-.orbit4 { transform: rotate(0deg) translateX(140px); }
-.orbit5 { transform: rotate(0deg) translateX(170px); }
-.orbit6 { transform: rotate(0deg) translateX(200px); }
-.orbit7 { transform: rotate(0deg) translateX(230px); }
-.orbit8 { transform: rotate(0deg) translateX(260px); }
-.orbit9 { transform: rotate(0deg) translateX(290px); }
-
-.orbit1 .planet-body { background-color: #ffeb3b; }
-.orbit2 .planet-body { background-color: #2196f3; }
-.orbit3 .planet-body { background-color: #f44336; }
-.orbit4 .planet-body { background-color: #4caf50; }
-.orbit5 .planet-body { background-color: #ff5722; }
-.orbit6 .planet-body { background-color: #9c27b0; }
-.orbit7 .planet-body { background-color: #3f51b5; }
-.orbit8 .planet-body { background-color: #00bcd4; }
-.orbit9 .planet-body { background-color: #8bc34a; }
-
 /* Orbit animations */
 .orbit1 { animation: orbit 5s linear infinite; }
 .orbit2 { animation: orbit 7s linear infinite; }
@@ -78,6 +57,17 @@ body {
 .orbit7 { animation: orbit 17s linear infinite; }
 .orbit8 { animation: orbit 19s linear infinite; }
 .orbit9 { animation: orbit 21s linear infinite; }
+
+/* Define planet distances from the sun */
+.orbit1 .planet-body { background-color: #ffeb3b; transform: translateX(50px); }
+.orbit2 .planet-body { background-color: #2196f3; transform: translateX(80px); }
+.orbit3 .planet-body { background-color: #f44336; transform: translateX(110px); }
+.orbit4 .planet-body { background-color: #4caf50; transform: translateX(140px); }
+.orbit5 .planet-body { background-color: #ff5722; transform: translateX(170px); }
+.orbit6 .planet-body { background-color: #9c27b0; transform: translateX(200px); }
+.orbit7 .planet-body { background-color: #3f51b5; transform: translateX(230px); }
+.orbit8 .planet-body { background-color: #00bcd4; transform: translateX(260px); }
+.orbit9 .planet-body { background-color: #8bc34a; transform: translateX(290px); }
 
 /* Keyframes for orbiting effect */
 @keyframes orbit {
