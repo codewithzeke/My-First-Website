@@ -47,19 +47,19 @@ body {
 }
 
 .orbit1 {
-  animation: rotateOrbit1 10s linear infinite;
+  animation: rotateOrbit1 3s linear infinite;
 }
 
 .orbit2 {
-  animation: rotateOrbit2 15s linear infinite;
+  animation: rotateOrbit2 5s linear infinite;
 }
 
 .orbit3 {
-  animation: rotateOrbit3 20s linear infinite;
+  animation: rotateOrbit3 7s linear infinite;
 }
 
 .orbit4 {
-  animation: rotateOrbit4 25s linear infinite;
+  animation: rotateOrbit4 8s linear infinite;
 }
 
 @keyframes rotateOrbit1 {
