@@ -34,7 +34,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: 0 50%;
+  transform-origin: center;
 }
 
 .planet-body {
@@ -46,121 +46,30 @@ body {
   left: -15px;
 }
 
-/* Orbit animations */
-.orbit1 {
-  animation: rotateOrbit1 10s linear infinite;
-}
+/* Different orbit distances */
+.orbit1 { width: 120px; height: 120px; transform-origin: 60px 60px; }
+.orbit2 { width: 160px; height: 160px; transform-origin: 80px 80px; }
+.orbit3 { width: 200px; height: 200px; transform-origin: 100px 100px; }
+.orbit4 { width: 240px; height: 240px; transform-origin: 120px 120px; }
+.orbit5 { width: 280px; height: 280px; transform-origin: 140px 140px; }
+.orbit6 { width: 320px; height: 320px; transform-origin: 160px 160px; }
+.orbit7 { width: 360px; height: 360px; transform-origin: 180px 180px; }
+.orbit8 { width: 400px; height: 400px; transform-origin: 200px 200px; }
+.orbit9 { width: 440px; height: 440px; transform-origin: 220px 220px; }
 
-.orbit2 {
-  animation: rotateOrbit2 15s linear infinite;
-}
+/* Orbit Animations */
+.orbit1 { animation: rotate 10s linear infinite; }
+.orbit2 { animation: rotate 15s linear infinite; }
+.orbit3 { animation: rotate 20s linear infinite; }
+.orbit4 { animation: rotate 25s linear infinite; }
+.orbit5 { animation: rotate 30s linear infinite; }
+.orbit6 { animation: rotate 35s linear infinite; }
+.orbit7 { animation: rotate 40s linear infinite; }
+.orbit8 { animation: rotate 45s linear infinite; }
+.orbit9 { animation: rotate 50s linear infinite; }
 
-.orbit3 {
-  animation: rotateOrbit3 20s linear infinite;
-}
-
-.orbit4 {
-  animation: rotateOrbit4 25s linear infinite;
-}
-
-.orbit5 {
-  animation: rotateOrbit5 30s linear infinite;
-}
-
-.orbit6 {
-  animation: rotateOrbit6 35s linear infinite;
-}
-
-.orbit7 {
-  animation: rotateOrbit7 40s linear infinite;
-}
-
-.orbit8 {
-  animation: rotateOrbit8 45s linear infinite;
-}
-
-.orbit9 {
-  animation: rotateOrbit9 50s linear infinite;
-}
-
-/* Keyframes for rotation */
-@keyframes rotateOrbit1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit4 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit5 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit6 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit7 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit8 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateOrbit9 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* Single keyframe for all orbits */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
