@@ -58,39 +58,39 @@ body {
 
 /* Increase the distance and adjust the animation timing */
 .orbit1 {
-  animation: rotateOrbit1 10s linear infinite;
+  animation: rotateOrbit1 1s linear infinite;
 }
 
 .orbit2 {
-  animation: rotateOrbit2 12s linear infinite;
+  animation: rotateOrbit2 3s linear infinite;
 }
 
 .orbit3 {
-  animation: rotateOrbit3 14s linear infinite;
+  animation: rotateOrbit3 4s linear infinite;
 }
 
 .orbit4 {
-  animation: rotateOrbit4 16s linear infinite;
+  animation: rotateOrbit4 5s linear infinite;
 }
 
 .orbit5 {
-  animation: rotateOrbit5 18s linear infinite;
+  animation: rotateOrbit5 6s linear infinite;
 }
 
 .orbit6 {
-  animation: rotateOrbit6 20s linear infinite;
+  animation: rotateOrbit6 7s linear infinite;
 }
 
 .orbit7 {
-  animation: rotateOrbit7 22s linear infinite;
+  animation: rotateOrbit7 8s linear infinite;
 }
 
 .orbit8 {
-  animation: rotateOrbit8 24s linear infinite;
+  animation: rotateOrbit8 9s linear infinite;
 }
 
 .orbit9 {
-  animation: rotateOrbit9 26s linear infinite;
+  animation: rotateOrbit9 10s linear infinite;
 }
 
 @keyframes rotateOrbit1 {
