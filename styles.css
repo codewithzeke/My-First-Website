@@ -35,8 +35,9 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  border: 3px dashed white;
+  border: 2px dashed white;
   transform: translate(-50%, -50%);
+  pointer-events: none; /* Ensures they don't interfere */
 }
 
 .orbit1 { width: 140px; height: 140px; }
